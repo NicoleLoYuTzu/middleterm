@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "594633300700",
+    "project_id": "middlerterm",
+    "storage_bucket": "middlerterm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594633300700:android:10a81b9310d4c13933b219",
+        "android_client_info": {
+          "package_name": "com.nicole.middlerterm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594633300700-199rmu0iuo2pmisl266i9nn9t12n3qkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4OnF8X683MCg8HN1hdQ0waEYgpf40Nx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594633300700-199rmu0iuo2pmisl266i9nn9t12n3qkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
