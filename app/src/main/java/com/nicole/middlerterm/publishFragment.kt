@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.nicole.middlerterm.databinding.FragmentPublishBinding
+import java.util.*
+import kotlin.collections.HashMap
 
 
 class PublishFragment : DialogFragment() {
@@ -35,17 +37,17 @@ class PublishFragment : DialogFragment() {
             val content = binding.editTextContent.text.toString()
             val time = System.currentTimeMillis()
             Log.d("Nicole", "我要看內容$title $category $content $time")
-            val author = hashMapOf(
-                "email" to "A4207486@gmail.com",
-                "id" to "A4207486",
-                "name" to "Nicole"
-            )
+
             val user = hashMapOf(
-                "author" to author,
-                "category" to category,
+                "author" to hashMapOf(
+                    "email" to "A4207486@gmail.com",
+                    "id" to "A4207486",
+                    "name" to "Nicole"
+                ),
+                "title" to title,
                 "content" to content,
                 "createdTime" to time,
-                "title" to title
+                "category" to category
             )
             db.collection("users")
                 .add(user)

@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                         Log.d(TAG, document.id + " => " + document.data)
                         val getDocument = document.data as MutableMap<String, Any>
                         Log.d("Nicole", "getDocument =${getDocument} ")
-                        val getAuthor = getDocument["author"] as MutableMap<*, *>
+                        val getAuthor = getDocument["author"] as MutableMap<String, Any>
                         Log.d("Mark", "getAuthor =${getAuthor} ")
                         val author = Author(
                             getAuthor["email"].toString(),
